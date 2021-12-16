@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<!--Code by Divinector - divinectorweb.com-->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>animated background with pure css and html</title>
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+
+
+<style>
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Baloo 2', cursive;
+}
+.banner-text {
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+}
+.banner-text ul {
+	height: 50px;
+	float: right;
+}
+.banner-text ul li {
+	display: inline-block;
+	padding: 40px 15px;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 20px;
+}
+.banner-text ul li:hover {
+	cursor: pointer;
+}
+.banner-text h2 {
+	text-align: center;
+	color: #fff;
+	font-size: 50px;
+	margin-top: 20%;
+}
+.animation-area {
+	background: linear-gradient(to left, #006400, #0000FF);
+	width: 100%;
+	height: 100vh;
+}
+.box-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.box-area li {
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 25px;
+	height: 25px;
+	background: rgba(255, 255, 255, 0.2);
+	animation: animate 20s linear infinite;
+	bottom: -150px;
+}
+.box-area li:nth-child(1) {
+	left: 86%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(2) {
+	left: 12%;
+	width: 30px;
+	height: 30px;
+	animation-delay: 1.5s;
+	animation-duration: 10s;
+}
+.box-area li:nth-child(3) {
+	left: 70%;
+	width: 100px;
+	height: 100px;
+	animation-delay: 5.5s;
+}
+.box-area li:nth-child(4) {
+	left: 42%;
+	width: 150px;
+	height: 150px;
+	animation-delay: 0s;
+	animation-duration: 15s;
+}
+.box-area li:nth-child(5) {
+	left: 65%;
+	width: 40px;
+	height: 40px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(6) {
+	left: 15%;
+	width: 110px;
+	height: 110px;
+	animation-delay: 3.5s;
+}
+@keyframes animate {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-800px) rotate(360deg);
+		opacity: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+header{
+width: 100%;
+height: 70px;
+background-color: black;
+}
+
+h1{
+position: absolute;
+padding: 3px;
+float: left;
+margin-left: 2%;
+margin-top: 10px;
+font-family: 'Alfa Slab One', cursive;
+color: #39ca74;
+}
+
+span{
+color: #FC6D6D;
+}
+
+a{
+text-align: center;
+color: #ffffff;
+text-decoration: none;
+font-family: 'Open Sans'. sans-serif;
+font-size: 1.2vw;
+}
+
+a:hover {
+color: #f0c330;
+transition: 0.5s;
+}
+
+.una{
+width: 100%;
+margin-top: 0px;
+}
+
+@media only screen and (min-width: 600px) {
+  .col-s-6 {width: 50%;}
+  .col-s-9 {width: 75%;}
+ 
+}
+
+@media only screen and (min-width: 768px) {
+  .col-6 {width: 50%;}
+  .col-9 {width: 75%;}
+
+.pangalawa{
+ background-image: url('bi.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+
+.three{
+background-color: white;
+}
+
+.yah{
+font-family: 'Source Sans Pro', sans-serif;
+letter-spacing: 4px;
+}
+
+.btn {
+width: 300px;
+height: 100px;
+border: none;
+color: white;
+background-color: #353535;
+border-radius: 4px;
+transition: ease-out 0.3s;
+font-size: 2rem;
+font-family: 'Alfa Slab One', cursive;
+outline: none;
+border: 6px solid #42FBF2;
+position: relative;
+z-index: 1;
+}
+
+.btn:hover {
+color: black;
+cursor: pointer;
+}
+
+.btn:before {
+transition: 0.5s all ease;
+position: absolute;
+top: 0;
+left: 50%;
+right: 50%;
+bottom: 0;
+opacity: 0;
+content: "";
+background-color: #42FBF2;
+}
+
+.btn:hover:before {
+transition: 0.5s all ease;
+left: 0;
+right: 0;
+opacity: 1;
+z-index: -1;
+}
+
+
+
+.waw {
+position: absolute;
+height: 10px;
+width: 100px;
+}
+
+
+.wrapper{
+display: inline-flex;
+}
+
+.wrapper .static-txt{
+color: #fff;
+font-size: 60px;
+font-weight: 400;
+}
+
+.wrapper .dynamic-txts{
+margin-left: 15px;
+line-height: 90px;
+height: 90px;
+overflow: hidden;
+}
+
+.dynamic-txts li{
+color: #FC6D6D;
+list-style: none;
+font-size: 60px;
+font-weight: 500;
+position: relative;
+top: 0;
+animation: slide 14s steps(4) infinite;
+}
+
+@keyframes slide {
+100%{
+top: -360px;
+}
+}
+.dynamic-txts li span{
+position: relative;
+}
+
+.dynamic-txts li span::after{
+content:"";
+position: absolute;
+left: 0;
+height: 100%;
+width: 100%;
+background: black;
+border-left: 2px solid #FC6D6D;
+animation: typing 3.5s steps(10) infinite;
+}
+
+@keyframes typing {
+100%{
+left: 100%;
+margin: 0 -35px 0 35px;
+}
+}
+
+
+.puta{
+font-size: 80px;
+}
+
+.hui{
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 20vh;
+background: black;
+}
+
+.joe {
+position: absolute;
+top: 100px;
+}
+
+.joey {
+position: absolute;
+border-radius: 50%;
+top: 5px;
+left: 5px;
+
+}
+
+.joeys {
+position: absolute;
+left: 4%;
+
+}
+
+.girl {
+position: absolute;
+border-radius: 50%;
+top: 490px;
+left: 20px;
+border: 5px solid black;
+}
+
+.girls {
+position: absolute;
+border-radius: 50%;
+top: 230px;
+left: 20px;
+border: 5px solid black;
+}
+
+.boy {
+position: absolute;
+border-radius: 50%;
+top: 100px;
+left: 20px;
+border: 5px solid black;
+}
+
+.boys {
+position: absolute;
+border-radius: 50%;
+top: 360px;
+left: 20px;
+border: 5px solid black;
+}
+
+.bo {
+position: absolute;
+top: 460px;
+left: 430px;
+}
+.a {
+position: absolute;
+top: 610px;
+left: -20px;
+}
+
+
+.text_wrapper h5{
+font-family: 'Josefin Sans', sans-serif;
+overflow: hidden;
+border-right: .15em solid rgb(87, 56, 56);
+white-space: nowrap;
+margin: 0 auto;
+letter-spacing: 0px;
+font-size: 2vw;
+animation:
+typing 3.5s steps(20, end),
+animated-cursor .5s step-end infinite;
+color: #7FFF00;
+}
+
+@keyframes typing{
+from { width: 0 }
+to { width: 100% }
+}
+
+@keyframes animated-cursor{
+from, to {border-color: transparent}
+50% { border-color: rgb(87, 56, 56)}
+}
+.hoi{
+
+display : flex;
+
+}
+
+
+.letche{
+position: absolute;
+top: 16%;
+left: 200px;
+}
+
+.letches{
+position: absolute;
+top: 30%;
+left: 200px;
+}
+
+.letchess{
+position: absolute;
+top: 44%;
+left: 200px;
+}
+
+.letchesss{
+position: absolute;
+top: 58%;
+left: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+::selection{
+  color: #fff;
+  background: #d43f8d;
+}
+.container{
+  width: 330px;
+  background: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px 35px 1px 35px;
+}
+.container header{
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+.container .form-outer{
+  width: 100%;
+  overflow: hidden;
+}
+.container .form-outer form{
+  display: flex;
+  width: 400%;
+}
+.form-outer form .page{
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+}
+.form-outer form .page .title{
+  text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+}
+.form-outer form .page .field{
+  width: 330px;
+  height: 45px;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+}
+form .page .field .label{
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+}
+form .page .field input{
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+form .page .field select{
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+form .page .field button{
+  width: 100%;
+  height: calc(100% + 5px);
+  border: none;
+  background: #d33f8d;
+  margin-top: -20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+form .page .field button:hover{
+  background: #000;
+}
+form .page .btns button{
+  margin-top: -20px!important;
+}
+form .page .btns button.prev{
+  margin-right: 3px;
+  font-size: 17px;
+}
+form .page .btns button.next{
+  margin-left: 3px;
+}
+.container .progress-bar{
+  display: flex;
+  margin: 40px 0;
+  user-select: none;
+}
+.container .progress-bar .step{
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.container .progress-bar .step p{
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 8px;
+}
+.progress-bar .step .bullet{
+  height: 25px;
+  width: 25px;
+  border: 2px solid #000;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+}
+.progress-bar .step .bullet.active{
+  border-color: #d43f8d;
+  background: #d43f8d;
+}
+.progress-bar .step .bullet span{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.progress-bar .step .bullet.active span{
+  display: none;
+}
+.progress-bar .step .bullet:before,
+.progress-bar .step .bullet:after{
+  position: absolute;
+  content: '';
+  bottom: 11px;
+  right: -51px;
+  height: 3px;
+  width: 44px;
+  background: #262626;
+}
+.progress-bar .step .bullet.active:after{
+  background: #d43f8d;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.progress-bar .step:last-child .bullet:before,
+.progress-bar .step:last-child .bullet:after{
+  display: none;
+}
+.progress-bar .step p.active{
+  color: #d43f8d;
+  transition: 0.2s linear;
+}
+.progress-bar .step .check{
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.progress-bar .step .check.active{
+  display: block;
+  color: #fff;
+}
+
+.jerez{
+position: absolute;
+top: 80px;
+left: 68%
+}
+
+</style>
+</head>
+<body>
+
+
+
+
+	<div class="banner-text">
+		<ul>
+			<li>Home</li>
+			<li>About</li>
+			<li>Portfolio</li>
+			<li>Services</li>
+			<li>Contact</li>
+		</ul>
+		<h2>Welcome to our Website</h2>
+	</div>
+	<div class="animation-area">
+		<ul class="box-area">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</body>
+</html>

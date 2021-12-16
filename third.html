@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body,
+      html, body {
+        height: 100%;
+        margin: 0;
+        background-color: #353535;
+      }
+      .bg {
+        background-image: url("background.png");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+
+
+
+
+
+header{
+width: 100%;
+height: 70px;
+background-color: blue;
+}
+
+h1{
+position: absolute;
+padding: 3px;
+float: left;
+margin-left: 2%;
+margin-top: 10px;
+font-family: 'Alfa Slab One', cursive;
+color: #39ca74;
+}
+
+span{
+color: #ffffff;
+}
+
+a{
+text-align: center;
+color: #ffffff;
+text-decoration: none;
+font-family: 'Open Sans'. sans-serif;
+font-size: 1.2vw;
+}
+
+a:hover {
+color: #f0c330;
+transition: 0.5s;
+}
+
+.una{
+width: 100%;
+margin-top: 0px;
+}
+
+@media only screen and (min-width: 600px) {
+  .col-s-6 {width: 50%;}
+  .col-s-9 {width: 75%;}
+ 
+}
+
+@media only screen and (min-width: 768px) {
+  .col-6 {width: 50%;}
+  .col-9 {width: 75%;}
+
+
+.pangalawa{
+ background-image: url('bi.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+
+.three{
+background-color: white;
+}
+
+.yah{
+font-family: 'Source Sans Pro', sans-serif;
+letter-spacing: 4px;
+}
+
+.btn {
+width: 300px;
+height: 100px;
+border: none;
+color: white;
+background-color: #353535;
+border-radius: 4px;
+transition: ease-out 0.3s;
+font-size: 2rem;
+font-family: 'Alfa Slab One', cursive;
+outline: none;
+border: 6px solid #42FBF2;
+position: relative;
+z-index: 1;
+}
+
+.btn:hover {
+color: black;
+cursor: pointer;
+}
+
+.btn:before {
+transition: 0.5s all ease;
+position: absolute;
+top: 0;
+left: 50%;
+right: 50%;
+bottom: 0;
+opacity: 0;
+content: "";
+background-color: #42FBF2;
+}
+
+.btn:hover:before {
+transition: 0.5s all ease;
+left: 0;
+right: 0;
+opacity: 1;
+z-index: -1;
+}
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: solid black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.hakdog {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 300px;
+border: solid black;
+  
+}
+
+.egg {
+position: absolute;
+display: flex;
+top: 250px;
+left: 37%;
+align-items: center;
+}
+
+    </style>
+.waw {
+position: absolute;
+height: 10px;
+width: 100px;
+}
+
+
+
+  </head>
+  <body>
+<header>
+<div class="banner-area">
+<h1>SCC<span>&nbsp;Samuel Christian College</span></h1>
+
+</header>
+
+
+
+
+<div class="bg">
+<center><div class="egg"><div class="hakdog">
+
+  <form name="myForm" action="/action_page.php" method="post">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+<label for="contact">Contact no.</label>
+    <input type="text" id="lname" name="contactno." placeholder="Contact no." required>
+
+<label for="YEAR">Year</label>
+    <select id="country" name="YEAR" required>
+      <option value="11">11</option>
+      <option value="12">12</option>
+
+
+    </select>
+
+
+    <label for="country">Strand</label>
+    <select id="country" name="Strands" required>
+      <option value="ABM">ABM</option>
+      <option value="STEM">STEM</option>
+      <option value="HUMSS">HUMSS</option>
+      <option value="GAS">GAS</option>
+      <option value="TVL-ICT">TVL-ICT</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form></center>
+
+</div>
+</div>
+</div>
+<center><div class="waw">
+<img src="students.png">
+</div></center>
+</div><br><br><br><br><br><br>
+<div class="three">
+<img class="una" src="scc.png"><br><br>
+</div><br>
+<div style="text-align:center"> 
+  <button class="btn" onclick="playPause()" >PLAY/PAUSE</button> 
+  <br><br>
+  <video id="video1" width="1200">
+    <source src="vid.mp4" type="video/mp4">
+    <source src="mov_bbb.ogg" type="video/ogg">
+    Your browser does not support HTML video.
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+</script>
+
+
+
+  </body>
+</html>

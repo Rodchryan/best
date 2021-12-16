@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+*{
+margin: 0px;
+padding: 0px;
+}
+
+.mainBox{
+width: 100vw;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background: black;
+}
+
+
+
+.neonText {
+padding: 1rem 1rem;
+text-align: center;
+
+}
+
+.neonText h2 {
+font-size: 6rem;
+text-align: center;
+font-weight: bold;
+animation: light 1.5s ease-in-out infinite alternate;
+}
+
+
+
+
+
+@keyframes light{
+from{
+color: blue;
+text-shadow: 0 0 10px #00fff2, 0 0
+20px #00fff2, 0 0 30px #00fff2, 0 0 40px
+#00fff2, 0 0 50px #00fff2, 0 0 60px
+#00fff2, 0 0 70px #00fff2, 0 0 90px
+#00fff2;
+}
+to{
+color: #fff;
+text-shadow: 0 0 20px #00fff2, 0 0
+30px #00fff2, 0 0 40px #00fff2, 0 0
+#00fff2, 0 0 60px #00fff2, 0 0 70px
+#00fff2, 0 0 80px #00fff2, 0 1 90px
+#00fff2;}
+}
+
+.wrapper{
+display: inline-flex;
+}
+
+.wrapper .static-txt{
+color: #fff;
+font-size: 60px;
+font-weight: 400;
+}
+
+.wrapper .dynamic-txts{
+margin-left: 15px;
+line-height: 90px;
+height: 90px;
+overflow: hidden;
+}
+
+.dynamic-txts li{
+color: #FC6D6D;
+list-style: none;
+font-size: 60px;
+font-weight: 500;
+position: relative;
+top: 0;
+animation: slide 14s steps(4) infinite;
+}
+
+@keyframes slide {
+100%{
+top: -360px;
+}
+}
+.dynamic-txts li span{
+position: relative;
+}
+
+.dynamic-txts li span::after{
+content:"";
+position: absolute;
+left: 0;
+height: 100%;
+width: 100%;
+background: black;
+border-left: 2px solid #FC6D6D;
+animation: typing 3.5s steps(10) infinite;
+}
+
+@keyframes typing {
+100%{
+left: 100%;
+margin: 0 -35px 0 35px;
+}
+}
+
+
+.puta{
+font-size: 80px;
+}
+
+.hui{
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 20vh;
+background: black;
+}
+
+.joey{
+position: absolute;
+top: 10%;
+left: 20%;
+
+}
+
+h4 {
+position: relative;
+font-size: 14vw;
+color: #252839;
+-webkit-text-stroke: 0.3vw #383d52;
+text-transform: uppercase;
+}
+
+h4::before {
+content: attr(data-text);
+position: absolute;
+top: 0;
+left: 0;
+width: 0;
+height: 100%;
+color: #01fe87;
+-webkit-text-stroke: 0vw #383d52;
+border-right: 2px solid #01fe87;
+overflow: hidden;
+animation: animate 6s linear infinite;
+}
+
+@keyframes animate { 0%,10%,100%
+{ width: 0;
+}
+70%,90%
+{
+width: 100%;
+}
+
+
+</style>
+</head>
+<body>
+<center>
+<div class="joey"
+<div class="hui">
+<div class="wrapper">
+<div class="static-txt"><div class="puta">SCC</div></div>
+<ul class="dynamic-txts">
+<li><span>A Mark of Excellence.</span></li>
+<li><span>A TestimonY of Faith.</span></li>
+<li><span>A Heart of Faith.</span></li>
+<li><span>Enroll Now!</span></li>
+<ul>
+</div></div></div>
+</center>
+
+<a href = "file:///C:/Users/crisino/Documents/solo/ex.html">
+<div class="mainBox">
+<div class="neonText">
+<h2>SAMUEL CHRISTIAN COLLEGE</h2></a>
+</div></div>
+
+
+<div class="hui">
+<div class="wrapper">
+<div class="static-txt"><div class="puta">SCC</div></div>
+<ul class="dynamic-txts">
+<li><span>A Mark of Excellence.</span></li>
+<li><span>A TestimonY of Faith.</span></li>
+<li><span>A Heart of Faith.</span></li>
+<li><span>Enroll Now!</span></li>
+<ul>
+</div></div>
+
+
+
+<h4 data-text="MEMBERS">MEMBERS</h4>
+
+
+
+
+
+
+
+</body>
+</html>
